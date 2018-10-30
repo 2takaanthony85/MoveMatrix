@@ -8,43 +8,55 @@
 
 import UIKit
 
-public class MatrixTableViewController: UIViewController {
+public class MatrixTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //
     internal lazy var upLeftTable: UITableView = {
         let table = UITableView()
-        table.backgroundColor = upLeftTableColor
         table.frame = CGRect(origin: view.frame.origin, size: tableSize)
+        table.tag = 1
+        table.backgroundColor = upLeftTableColor
+        table.dataSource = self
+        table.delegate = self
         return table
     }()
     
     //
     internal lazy var upRightTable: UITableView = {
         let table = UITableView()
-        table.backgroundColor = upRightTableColor
         table.frame = CGRect(origin: CGPoint(x: view.frame.origin.x + (view.frame.width / 2) + (margin / 2),
                                              y: view.frame.origin.y),
                              size: tableSize)
+        table.tag = 2
+        table.backgroundColor = upRightTableColor
+        table.dataSource = self
+        table.delegate = self
         return table
     }()
     
     //
     internal lazy var downLeftTable: UITableView = {
         let table = UITableView()
-        table.backgroundColor = downLeftTableColor
         table.frame = CGRect(origin: CGPoint(x: view.frame.origin.x,
                                              y: view.frame.origin.y + (view.frame.height / 2) + (margin / 2)),
                              size: tableSize)
+        table.tag = 3
+        table.backgroundColor = downLeftTableColor
+        table.dataSource = self
+        table.delegate = self
         return table
     }()
     
     //
     internal lazy var downRightTable: UITableView = {
         let table = UITableView()
-        table.backgroundColor = downRightTableColor
         table.frame = CGRect(origin: CGPoint(x: view.frame.origin.x + (view.frame.width / 2) + (margin / 2),
                                              y: view.frame.origin.y + (view.frame.height / 2) + (margin / 2)),
                              size: tableSize)
+        table.tag = 4
+        table.backgroundColor = downRightTableColor
+        table.dataSource = self
+        table.delegate = self
         return table
     }()
     
@@ -102,6 +114,26 @@ public class MatrixTableViewController: UIViewController {
         upRightInitFrame = upRightTable.frame
         downLeftInitFrame = downLeftTable.frame
         downRightInitFrame = downRightTable.frame
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch tableView.tag {
+        case 1: return 1
+        case 2: return 2
+        case 3: return 3
+        default: return 4
+        }
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
+        if tableView.tag == 1 {
+            cell.textLabel?.text = "hoge"
+            return cell
+        } else {
+            cell.textLabel?.text = "fuga"
+            return cell
+        }
     }
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
