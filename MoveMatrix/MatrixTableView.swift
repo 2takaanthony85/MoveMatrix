@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class MatrixTableView: UIView {
+public class MatrixTableView: UIView, MoveMatrixComponent {
 
     //
-    internal lazy var upLeftTable: UITableView = {
+    public lazy var upLeftTable: UITableView = {
         let table = UITableView()
         table.frame = CGRect(origin: self.frame.origin, size: tableSize)
         table.tag = 1
@@ -22,7 +22,7 @@ public class MatrixTableView: UIView {
     }()
     
     //
-    internal lazy var upRightTable: UITableView = {
+    public lazy var upRightTable: UITableView = {
         let table = UITableView()
         table.frame = CGRect(origin: CGPoint(x: self.frame.origin.x + (self.frame.width / 2) + (margin / 2),
                                              y: self.frame.origin.y),
@@ -35,7 +35,7 @@ public class MatrixTableView: UIView {
     }()
     
     //
-    internal lazy var downLeftTable: UITableView = {
+    public lazy var downLeftTable: UITableView = {
         let table = UITableView()
         table.frame = CGRect(origin: CGPoint(x: self.frame.origin.x,
                                              y: self.frame.origin.y + (self.frame.height / 2) + (margin / 2)),
@@ -48,7 +48,7 @@ public class MatrixTableView: UIView {
     }()
     
     //
-    internal lazy var downRightTable: UITableView = {
+    public lazy var downRightTable: UITableView = {
         let table = UITableView()
         table.frame = CGRect(origin: CGPoint(x: self.frame.origin.x + (self.frame.width / 2) + (margin / 2),
                                              y: self.frame.origin.y + (self.frame.height / 2) + (margin / 2)),
@@ -68,13 +68,32 @@ public class MatrixTableView: UIView {
     }()
     
     //
-    public var upLeftTableColor: UIColor = UIColor.white
+    public var upLeftTableColor: UIColor = UIColor(code: "#9BF9CC") {
+        didSet {
+            upLeftTable.backgroundColor = upLeftTableColor
+        }
+    }
+    
     //
-    public var upRightTableColor: UIColor = UIColor(code: "#CEF9DC")
+    public var upRightTableColor: UIColor = UIColor(code: "#CEF9DC") {
+        didSet {
+            upRightTable.backgroundColor = upRightTableColor
+        }
+    }
+    
     //
-    public var downLeftTableColor: UIColor = UIColor(code: "#B1F9D0")
+    public var downLeftTableColor: UIColor = UIColor(code: "#B1F9D0") {
+        didSet {
+            downLeftTable.backgroundColor = downLeftTableColor
+        }
+    }
+    
     //
-    public var downRightTableColor: UIColor = UIColor(code: "#9BF9CC")
+    public var downRightTableColor: UIColor = UIColor(code: "#9BF9CC") {
+        didSet {
+            downRightTable.backgroundColor = downRightTableColor
+        }
+    }
     
     //MARK: center marker
     internal lazy var label: UILabel = {
@@ -102,17 +121,28 @@ public class MatrixTableView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         self.addSubview(upLeftTable)
         self.addSubview(upRightTable)
         self.addSubview(downLeftTable)
         self.addSubview(downRightTable)
         self.addSubview(label)
         
+        loadTableFrame()
+        loadTableColor()
+    }
+    
+    internal func loadTableFrame() {
         upLeftInitFrame = upLeftTable.frame
         upRightInitFrame = upRightTable.frame
         downLeftInitFrame = downLeftTable.frame
         downRightInitFrame = downRightTable.frame
+    }
+    
+    internal func loadTableColor() {
+        upLeftTable.backgroundColor = upLeftTableColor
+        upRightTable.backgroundColor = upRightTableColor
+        downLeftTable.backgroundColor = downLeftTableColor
+        downRightTable.backgroundColor = downRightTableColor
     }
     
     required init?(coder aDecoder: NSCoder) {
