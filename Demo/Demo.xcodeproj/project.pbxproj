@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		594716C121889D1300F11972 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594716C021889D1300F11972 /* Extensions.swift */; };
-		594716C7218A05C000F11972 /* MatrixTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594716C6218A05C000F11972 /* MatrixTableView.swift */; };
-		594716D7218B565700F11972 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594716D6218B565700F11972 /* MatrixViewController.swift */; };
-		594716D9218B580200F11972 /* MoveMatrixComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594716D8218B580200F11972 /* MoveMatrixComponent.swift */; };
 		59A48CC72185363100694BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CC62185363100694BBB /* AppDelegate.swift */; };
 		59A48CC92185363100694BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CC82185363100694BBB /* ViewController.swift */; };
 		59A48CCC2185363100694BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A48CCA2185363100694BBB /* Main.storyboard */; };
@@ -19,6 +16,9 @@
 		59A48CDC2185363300694BBB /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CDB2185363300694BBB /* DemoTests.swift */; };
 		59A48CE72185363300694BBB /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CE62185363300694BBB /* DemoUITests.swift */; };
 		59A48CF72185369400694BBB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59A48CF62185369400694BBB /* Info.plist */; };
+		59C70C79218CA2E300A27083 /* MMComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C70C78218CA2E300A27083 /* MMComponentType.swift */; };
+		59C70C7B218CAAAA00A27083 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C70C7A218CAAAA00A27083 /* MMViewController.swift */; };
+		59C70C7D218CB71000A27083 /* MMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C70C7C218CB71000A27083 /* MMTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,6 @@
 
 /* Begin PBXFileReference section */
 		594716C021889D1300F11972 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		594716C6218A05C000F11972 /* MatrixTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTableView.swift; sourceTree = "<group>"; };
-		594716D6218B565700F11972 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
-		594716D8218B580200F11972 /* MoveMatrixComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMatrixComponent.swift; sourceTree = "<group>"; };
 		59A48CC32185363100694BBB /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A48CC62185363100694BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59A48CC82185363100694BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +55,9 @@
 		59A48CE82185363300694BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A48CF52185369400694BBB /* MoveMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMatrix.h; sourceTree = "<group>"; };
 		59A48CF62185369400694BBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59C70C78218CA2E300A27083 /* MMComponentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMComponentType.swift; sourceTree = "<group>"; };
+		59C70C7A218CAAAA00A27083 /* MMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
+		59C70C7C218CB71000A27083 /* MMTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +142,9 @@
 			children = (
 				59A48CF52185369400694BBB /* MoveMatrix.h */,
 				594716C021889D1300F11972 /* Extensions.swift */,
-				594716C6218A05C000F11972 /* MatrixTableView.swift */,
-				594716D8218B580200F11972 /* MoveMatrixComponent.swift */,
-				594716D6218B565700F11972 /* MatrixViewController.swift */,
+				59C70C78218CA2E300A27083 /* MMComponentType.swift */,
+				59C70C7A218CAAAA00A27083 /* MMViewController.swift */,
+				59C70C7C218CB71000A27083 /* MMTableViewController.swift */,
 				59A48CF62185369400694BBB /* Info.plist */,
 			);
 			name = MoveMatrix;
@@ -284,11 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A48CC92185363100694BBB /* ViewController.swift in Sources */,
-				594716C7218A05C000F11972 /* MatrixTableView.swift in Sources */,
+				59C70C7B218CAAAA00A27083 /* MMViewController.swift in Sources */,
 				594716C121889D1300F11972 /* Extensions.swift in Sources */,
 				59A48CC72185363100694BBB /* AppDelegate.swift in Sources */,
-				594716D7218B565700F11972 /* MatrixViewController.swift in Sources */,
-				594716D9218B580200F11972 /* MoveMatrixComponent.swift in Sources */,
+				59C70C79218CA2E300A27083 /* MMComponentType.swift in Sources */,
+				59C70C7D218CB71000A27083 /* MMTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
