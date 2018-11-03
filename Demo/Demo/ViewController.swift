@@ -12,14 +12,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let button = UIButton()
+        button.frame.size = CGSize(width: 60, height: 40)
+        button.center = self.view.center
+        button.backgroundColor = UIColor.black
+        self.view.addSubview(button)
+        
+        button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        //let vc = MMViewController()
+//        let vc = MMViewController()
+//        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func tappedButton() {
         let vc = MMTableViewController()
-        self.present(vc, animated: true, completion: nil)
+        //let nv = UINavigationController.init(rootViewController: vc)
+        let nv = MMNavigationController.init(rootViewController: vc)
+        //nv.pushViewController(vc, animated: true)
+        self.present(nv, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

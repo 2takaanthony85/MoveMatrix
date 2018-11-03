@@ -19,6 +19,7 @@
 		59C70C79218CA2E300A27083 /* MMComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C70C78218CA2E300A27083 /* MMComponentType.swift */; };
 		59C70C7B218CAAAA00A27083 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C70C7A218CAAAA00A27083 /* MMViewController.swift */; };
 		59C70C7D218CB71000A27083 /* MMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C70C7C218CB71000A27083 /* MMTableViewController.swift */; };
+		59EC2380218DB885001DB68B /* MMViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC237F218DB885001DB68B /* MMViewControllerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		59C70C78218CA2E300A27083 /* MMComponentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMComponentType.swift; sourceTree = "<group>"; };
 		59C70C7A218CAAAA00A27083 /* MMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		59C70C7C218CB71000A27083 /* MMTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTableViewController.swift; sourceTree = "<group>"; };
+		59EC237F218DB885001DB68B /* MMViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMViewControllerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				59C70C78218CA2E300A27083 /* MMComponentType.swift */,
 				59C70C7A218CAAAA00A27083 /* MMViewController.swift */,
 				59C70C7C218CB71000A27083 /* MMTableViewController.swift */,
+				59EC237F218DB885001DB68B /* MMViewControllerType.swift */,
 				59A48CF62185369400694BBB /* Info.plist */,
 			);
 			name = MoveMatrix;
@@ -289,6 +292,7 @@
 				59A48CC72185363100694BBB /* AppDelegate.swift in Sources */,
 				59C70C79218CA2E300A27083 /* MMComponentType.swift in Sources */,
 				59C70C7D218CB71000A27083 /* MMTableViewController.swift in Sources */,
+				59EC2380218DB885001DB68B /* MMViewControllerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
