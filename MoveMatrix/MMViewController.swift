@@ -105,7 +105,6 @@ public class MMViewController: UIViewController, MMComponentType {
     }
     
     internal func _loadView() {
-        super.loadView()
         self.view.addSubview(UpLeftView)
         self.view.addSubview(UpRightView)
         self.view.addSubview(DownLeftView)
@@ -139,6 +138,7 @@ public class MMViewController: UIViewController, MMComponentType {
     
     public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         touchFlg = false
+        Marker.center = CGPoint(x: UpLeftView.frame.maxX + 2, y: UpLeftView.frame.maxY + 2)
     }
     
     override public var shouldAutorotate: Bool {

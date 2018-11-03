@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let vc = MMViewController()
+        //let vc = MMViewController()
+        let vc = MMTableViewController()
         self.present(vc, animated: true, completion: nil)
     }
 
