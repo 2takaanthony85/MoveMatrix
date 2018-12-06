@@ -11,6 +11,10 @@ import UIKit
 
 public class MMNavigationController: UINavigationController {
     
+    /*
+        support only portrait
+    */
+    
     public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }

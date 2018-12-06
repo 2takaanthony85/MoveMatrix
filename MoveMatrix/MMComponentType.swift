@@ -24,6 +24,7 @@ public protocol MMComponentType: class {
     
     var DownRightView: ViewType { get set }
     
+    // center marker
     var Marker: MarkerType { get set }
     
     // view backgroundColor
