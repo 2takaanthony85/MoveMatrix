@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5915F5DD21B96788009ED0A4 /* MMComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D621B96788009ED0A4 /* MMComponentType.swift */; };
+		5915F5DE21B96788009ED0A4 /* MMViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D721B96788009ED0A4 /* MMViewControllerType.swift */; };
+		5915F5DF21B96788009ED0A4 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D821B96788009ED0A4 /* MMViewController.swift */; };
+		5915F5E021B96788009ED0A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D921B96788009ED0A4 /* Extensions.swift */; };
+		5915F5E221B96788009ED0A4 /* MMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5DB21B96788009ED0A4 /* MMTableViewController.swift */; };
+		59891E2A21B969630027B644 /* MoveMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 5915F5DA21B96788009ED0A4 /* MoveMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59A48CAA2185356600694BBB /* MoveMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A48CA02185356500694BBB /* MoveMatrix.framework */; };
 		59A48CAF2185356600694BBB /* MoveMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CAE2185356600694BBB /* MoveMatrixTests.swift */; };
-		59A48CB12185356600694BBB /* MoveMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A48CA32185356500694BBB /* MoveMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5915F5D621B96788009ED0A4 /* MMComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMComponentType.swift; sourceTree = "<group>"; };
+		5915F5D721B96788009ED0A4 /* MMViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewControllerType.swift; sourceTree = "<group>"; };
+		5915F5D821B96788009ED0A4 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
+		5915F5D921B96788009ED0A4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5915F5DA21B96788009ED0A4 /* MoveMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMatrix.h; sourceTree = "<group>"; };
+		5915F5DB21B96788009ED0A4 /* MMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTableViewController.swift; sourceTree = "<group>"; };
+		5915F5DC21B96788009ED0A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A48CA02185356500694BBB /* MoveMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoveMatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59A48CA32185356500694BBB /* MoveMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveMatrix.h; sourceTree = "<group>"; };
-		59A48CA42185356500694BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A48CA92185356600694BBB /* MoveMatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveMatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A48CAE2185356600694BBB /* MoveMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMatrixTests.swift; sourceTree = "<group>"; };
 		59A48CB02185356600694BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,10 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5915F5D521B96788009ED0A4 /* MoveMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				5915F5D621B96788009ED0A4 /* MMComponentType.swift */,
+				5915F5D721B96788009ED0A4 /* MMViewControllerType.swift */,
+				5915F5D821B96788009ED0A4 /* MMViewController.swift */,
+				5915F5D921B96788009ED0A4 /* Extensions.swift */,
+				5915F5DA21B96788009ED0A4 /* MoveMatrix.h */,
+				5915F5DB21B96788009ED0A4 /* MMTableViewController.swift */,
+				5915F5DC21B96788009ED0A4 /* Info.plist */,
+			);
+			path = MoveMatrix;
+			sourceTree = "<group>";
+		};
 		59A48C962185356500694BBB = {
 			isa = PBXGroup;
 			children = (
-				59A48CA22185356500694BBB /* MoveMatrix */,
+				5915F5D521B96788009ED0A4 /* MoveMatrix */,
 				59A48CAD2185356600694BBB /* MoveMatrixTests */,
 				59A48CA12185356500694BBB /* Products */,
 			);
@@ -66,15 +90,6 @@
 				59A48CA92185356600694BBB /* MoveMatrixTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		59A48CA22185356500694BBB /* MoveMatrix */ = {
-			isa = PBXGroup;
-			children = (
-				59A48CA32185356500694BBB /* MoveMatrix.h */,
-				59A48CA42185356500694BBB /* Info.plist */,
-			);
-			path = MoveMatrix;
 			sourceTree = "<group>";
 		};
 		59A48CAD2185356600694BBB /* MoveMatrixTests */ = {
@@ -93,7 +108,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A48CB12185356600694BBB /* MoveMatrix.h in Headers */,
+				59891E2A21B969630027B644 /* MoveMatrix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5915F5DF21B96788009ED0A4 /* MMViewController.swift in Sources */,
+				5915F5DE21B96788009ED0A4 /* MMViewControllerType.swift in Sources */,
+				5915F5E221B96788009ED0A4 /* MMTableViewController.swift in Sources */,
+				5915F5DD21B96788009ED0A4 /* MMComponentType.swift in Sources */,
+				5915F5E021B96788009ED0A4 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +409,7 @@
 		59A48CB82185356600694BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LC262FF5YU;
 				INFOPLIST_FILE = MoveMatrixTests/Info.plist;
@@ -407,6 +428,7 @@
 		59A48CB92185356600694BBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LC262FF5YU;
 				INFOPLIST_FILE = MoveMatrixTests/Info.plist;
