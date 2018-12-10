@@ -92,4 +92,3 @@ extension MMComponentType {
 
 // MMTableType ViewType == UITableView
 public protocol MMTableType: MMComponentType where ViewType == UITableView {}
-
