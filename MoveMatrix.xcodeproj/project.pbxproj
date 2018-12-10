@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5915F5DD21B96788009ED0A4 /* MMComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D621B96788009ED0A4 /* MMComponentType.swift */; };
-		5915F5DE21B96788009ED0A4 /* MMViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D721B96788009ED0A4 /* MMViewControllerType.swift */; };
-		5915F5DF21B96788009ED0A4 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D821B96788009ED0A4 /* MMViewController.swift */; };
-		5915F5E021B96788009ED0A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5D921B96788009ED0A4 /* Extensions.swift */; };
-		5915F5E221B96788009ED0A4 /* MMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F5DB21B96788009ED0A4 /* MMTableViewController.swift */; };
-		59891E2A21B969630027B644 /* MoveMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 5915F5DA21B96788009ED0A4 /* MoveMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		592748EC21BECA9800CC0E6A /* MMTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748E321BECA9800CC0E6A /* MMTableViewDelegate.swift */; };
+		592748ED21BECA9800CC0E6A /* MMComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748E421BECA9800CC0E6A /* MMComponentType.swift */; };
+		592748EE21BECA9800CC0E6A /* PositionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748E521BECA9800CC0E6A /* PositionType.swift */; };
+		592748EF21BECA9800CC0E6A /* MMViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748E621BECA9800CC0E6A /* MMViewControllerType.swift */; };
+		592748F021BECA9800CC0E6A /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748E721BECA9800CC0E6A /* MMViewController.swift */; };
+		592748F121BECA9800CC0E6A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748E821BECA9800CC0E6A /* Extensions.swift */; };
+		592748F321BECA9800CC0E6A /* MMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748EA21BECA9800CC0E6A /* MMTableViewController.swift */; };
+		592748F521BECAEE00CC0E6A /* MoveMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 592748E921BECA9800CC0E6A /* MoveMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		592748F921BECB6600CC0E6A /* MoveMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748F821BECB6600CC0E6A /* MoveMatrix.swift */; };
+		592748FB21BECB9100CC0E6A /* lll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748FA21BECB9100CC0E6A /* lll.swift */; };
 		59A48CAA2185356600694BBB /* MoveMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A48CA02185356500694BBB /* MoveMatrix.framework */; };
 		59A48CAF2185356600694BBB /* MoveMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CAE2185356600694BBB /* MoveMatrixTests.swift */; };
 /* End PBXBuildFile section */
@@ -28,13 +32,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5915F5D621B96788009ED0A4 /* MMComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMComponentType.swift; sourceTree = "<group>"; };
-		5915F5D721B96788009ED0A4 /* MMViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewControllerType.swift; sourceTree = "<group>"; };
-		5915F5D821B96788009ED0A4 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
-		5915F5D921B96788009ED0A4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		5915F5DA21B96788009ED0A4 /* MoveMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMatrix.h; sourceTree = "<group>"; };
-		5915F5DB21B96788009ED0A4 /* MMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTableViewController.swift; sourceTree = "<group>"; };
-		5915F5DC21B96788009ED0A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		592748E321BECA9800CC0E6A /* MMTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTableViewDelegate.swift; sourceTree = "<group>"; };
+		592748E421BECA9800CC0E6A /* MMComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMComponentType.swift; sourceTree = "<group>"; };
+		592748E521BECA9800CC0E6A /* PositionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionType.swift; sourceTree = "<group>"; };
+		592748E621BECA9800CC0E6A /* MMViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewControllerType.swift; sourceTree = "<group>"; };
+		592748E721BECA9800CC0E6A /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
+		592748E821BECA9800CC0E6A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		592748E921BECA9800CC0E6A /* MoveMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMatrix.h; sourceTree = "<group>"; };
+		592748EA21BECA9800CC0E6A /* MMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTableViewController.swift; sourceTree = "<group>"; };
+		592748EB21BECA9800CC0E6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		592748F821BECB6600CC0E6A /* MoveMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveMatrix.swift; sourceTree = "<group>"; };
+		592748FA21BECB9100CC0E6A /* lll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lll.swift; sourceTree = "<group>"; };
 		59A48CA02185356500694BBB /* MoveMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoveMatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A48CA92185356600694BBB /* MoveMatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveMatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A48CAE2185356600694BBB /* MoveMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMatrixTests.swift; sourceTree = "<group>"; };
@@ -60,16 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5915F5D521B96788009ED0A4 /* MoveMatrix */ = {
+		592748E221BECA9800CC0E6A /* MoveMatrix */ = {
 			isa = PBXGroup;
 			children = (
-				5915F5D621B96788009ED0A4 /* MMComponentType.swift */,
-				5915F5D721B96788009ED0A4 /* MMViewControllerType.swift */,
-				5915F5D821B96788009ED0A4 /* MMViewController.swift */,
-				5915F5D921B96788009ED0A4 /* Extensions.swift */,
-				5915F5DA21B96788009ED0A4 /* MoveMatrix.h */,
-				5915F5DB21B96788009ED0A4 /* MMTableViewController.swift */,
-				5915F5DC21B96788009ED0A4 /* Info.plist */,
+				592748F821BECB6600CC0E6A /* MoveMatrix.swift */,
+				592748E321BECA9800CC0E6A /* MMTableViewDelegate.swift */,
+				592748E421BECA9800CC0E6A /* MMComponentType.swift */,
+				592748E521BECA9800CC0E6A /* PositionType.swift */,
+				592748E621BECA9800CC0E6A /* MMViewControllerType.swift */,
+				592748E721BECA9800CC0E6A /* MMViewController.swift */,
+				592748E821BECA9800CC0E6A /* Extensions.swift */,
+				592748E921BECA9800CC0E6A /* MoveMatrix.h */,
+				592748EA21BECA9800CC0E6A /* MMTableViewController.swift */,
+				592748EB21BECA9800CC0E6A /* Info.plist */,
+				592748FA21BECB9100CC0E6A /* lll.swift */,
 			);
 			path = MoveMatrix;
 			sourceTree = "<group>";
@@ -77,7 +89,7 @@
 		59A48C962185356500694BBB = {
 			isa = PBXGroup;
 			children = (
-				5915F5D521B96788009ED0A4 /* MoveMatrix */,
+				592748E221BECA9800CC0E6A /* MoveMatrix */,
 				59A48CAD2185356600694BBB /* MoveMatrixTests */,
 				59A48CA12185356500694BBB /* Products */,
 			);
@@ -108,7 +120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59891E2A21B969630027B644 /* MoveMatrix.h in Headers */,
+				592748F521BECAEE00CC0E6A /* MoveMatrix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,11 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5915F5DF21B96788009ED0A4 /* MMViewController.swift in Sources */,
-				5915F5DE21B96788009ED0A4 /* MMViewControllerType.swift in Sources */,
-				5915F5E221B96788009ED0A4 /* MMTableViewController.swift in Sources */,
-				5915F5DD21B96788009ED0A4 /* MMComponentType.swift in Sources */,
-				5915F5E021B96788009ED0A4 /* Extensions.swift in Sources */,
+				592748F021BECA9800CC0E6A /* MMViewController.swift in Sources */,
+				592748F121BECA9800CC0E6A /* Extensions.swift in Sources */,
+				592748F321BECA9800CC0E6A /* MMTableViewController.swift in Sources */,
+				592748EF21BECA9800CC0E6A /* MMViewControllerType.swift in Sources */,
+				592748FB21BECB9100CC0E6A /* lll.swift in Sources */,
+				592748EC21BECA9800CC0E6A /* MMTableViewDelegate.swift in Sources */,
+				592748EE21BECA9800CC0E6A /* PositionType.swift in Sources */,
+				592748ED21BECA9800CC0E6A /* MMComponentType.swift in Sources */,
+				592748F921BECB6600CC0E6A /* MoveMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
