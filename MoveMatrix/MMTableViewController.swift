@@ -9,12 +9,11 @@
 import Foundation
 import UIKit
 
-public class MMTableViewController: UIViewController, MMTableType {
+public class MMTableViewController: UIViewController, MMTableType, UITableViewDelegate {
 
     public typealias ViewType = UITableView
     
     public typealias MarkerType = UILabel
-
 
     public lazy var UpLeftView: UITableView = {
         let table = UITableView()

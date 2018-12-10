@@ -22,19 +22,8 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-//        let vc = MMViewController()
-//        self.present(vc, animated: true, completion: nil)
-    }
-    
     @objc func tappedButton() {
-        let vc = MMTableViewController()
-        //let nv = UINavigationController.init(rootViewController: vc)
-        let nv = MMNavigationController.init(rootViewController: vc)
-        //nv.pushViewController(vc, animated: true)
-        self.present(nv, animated: true, completion: nil)
+        print("tapped button")
     }
 
     override func didReceiveMemoryWarning() {

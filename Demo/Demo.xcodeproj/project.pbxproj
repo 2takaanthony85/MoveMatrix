@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592748D321BEA97B00CC0E6A /* MMTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748D221BEA97B00CC0E6A /* MMTableViewDelegate.swift */; };
+		592748DF21BEB4E000CC0E6A /* PositionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592748DE21BEB4E000CC0E6A /* PositionType.swift */; };
 		594716C121889D1300F11972 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594716C021889D1300F11972 /* Extensions.swift */; };
 		59A48CC72185363100694BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CC62185363100694BBB /* AppDelegate.swift */; };
 		59A48CC92185363100694BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A48CC82185363100694BBB /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		592748D221BEA97B00CC0E6A /* MMTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTableViewDelegate.swift; sourceTree = "<group>"; };
+		592748DE21BEB4E000CC0E6A /* PositionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionType.swift; sourceTree = "<group>"; };
 		594716C021889D1300F11972 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		59A48CC32185363100694BBB /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A48CC62185363100694BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				59C70C7C218CB71000A27083 /* MMTableViewController.swift */,
 				59EC237F218DB885001DB68B /* MMViewControllerType.swift */,
 				59A48CF62185369400694BBB /* Info.plist */,
+				592748D221BEA97B00CC0E6A /* MMTableViewDelegate.swift */,
+				592748DE21BEB4E000CC0E6A /* PositionType.swift */,
 			);
 			name = MoveMatrix;
 			path = ../MoveMatrix;
@@ -287,9 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A48CC92185363100694BBB /* ViewController.swift in Sources */,
+				592748DF21BEB4E000CC0E6A /* PositionType.swift in Sources */,
 				59C70C7B218CAAAA00A27083 /* MMViewController.swift in Sources */,
 				594716C121889D1300F11972 /* Extensions.swift in Sources */,
 				59A48CC72185363100694BBB /* AppDelegate.swift in Sources */,
+				592748D321BEA97B00CC0E6A /* MMTableViewDelegate.swift in Sources */,
 				59C70C79218CA2E300A27083 /* MMComponentType.swift in Sources */,
 				59C70C7D218CB71000A27083 /* MMTableViewController.swift in Sources */,
 				59EC2380218DB885001DB68B /* MMViewControllerType.swift in Sources */,
